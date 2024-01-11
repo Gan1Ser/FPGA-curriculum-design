@@ -1,0 +1,325 @@
+Analysis & Synthesis report for digital_clock
+Wed Jan 10 23:32:09 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jan 10 23:32:09 2024        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; digital_clock                                ;
+; Top-level Entity Name              ; digital_clock                                ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 107                                          ;
+;     Total combinational functions  ; 107                                          ;
+;     Dedicated logic registers      ; 46                                           ;
+; Total registers                    ; 46                                           ;
+; Total pins                         ; 18                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C25Q240C8       ;                    ;
+; Top-level entity name                                                      ; digital_clock      ; digital_clock      ;
+; Family name                                                                ; Cyclone III        ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                            ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------+
+; ../SelTube/SelTube.vhd           ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/SelTube/SelTube.vhd             ;
+; ../SelNumber/SelNumber.vhd       ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/SelNumber/SelNumber.vhd         ;
+; ../SECOND/SECOND.vhd             ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/SECOND/SECOND.vhd               ;
+; ../OR_2/OR_2.vhd                 ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/OR_2/OR_2.vhd                   ;
+; ../MINUTE/MINUTE.vhd             ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/MINUTE/MINUTE.vhd               ;
+; ../HOUR/HOUR.vhd                 ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/HOUR/HOUR.vhd                   ;
+; ../FENPIN/FENPIN.vhd             ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/FENPIN/FENPIN.vhd               ;
+; ../DECODER/DECODER.vhd           ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/DECODER/DECODER.vhd             ;
+; ../CNT6/CNT6.vhd                 ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/CNT6/CNT6.vhd                   ;
+; ../bell/bell.vhd                 ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/bell/bell.vhd                   ;
+; ../AND_2/AND_2.vhd               ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/AND_2/AND_2.vhd                 ;
+; digital_clock.vhd                ; yes             ; User VHDL File  ; C:/Users/GanSer/Desktop/digital_clock/digital_clock.vhd ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 107            ;
+;                                             ;                ;
+; Total combinational functions               ; 107            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 49             ;
+;     -- 3 input functions                    ; 27             ;
+;     -- <=2 input functions                  ; 31             ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 85             ;
+;     -- arithmetic mode                      ; 22             ;
+;                                             ;                ;
+; Total registers                             ; 46             ;
+;     -- Dedicated logic registers            ; 46             ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 18             ;
+; Maximum fan-out node                        ; CNT6:U8|cnt[2] ;
+; Maximum fan-out                             ; 19             ;
+; Total fan-out                               ; 485            ;
+; Average fan-out                             ; 2.57           ;
++---------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
+; |digital_clock             ; 107 (0)           ; 46 (0)       ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |digital_clock              ; work         ;
+;    |CNT6:U8|               ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|CNT6:U8      ; work         ;
+;    |DECODER:U9|            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|DECODER:U9   ; work         ;
+;    |FENPIN:U1|             ; 21 (21)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|FENPIN:U1    ;              ;
+;    |HOUR:U4|               ; 14 (14)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|HOUR:U4      ; work         ;
+;    |MINUTE:U3|             ; 17 (17)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|MINUTE:U3    ; work         ;
+;    |OR_2:U10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|OR_2:U10     ; work         ;
+;    |SECOND:U2|             ; 14 (14)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|SECOND:U2    ; work         ;
+;    |SelNumber:U6|          ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|SelNumber:U6 ; work         ;
+;    |SelTube:U7|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|SelTube:U7   ; work         ;
+;    |bell:U5|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |digital_clock|bell:U5      ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 46    ;
+; Number of registers using Synchronous Clear  ; 15    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 7     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |digital_clock|MINUTE:U3|COUT2[3]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |digital_clock|SECOND:U2|COUT2[3]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |digital_clock|HOUR:U4|COUNT_GE[1] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |digital_clock|MINUTE:U3|COUT1[3]  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |digital_clock|SECOND:U2|COUT1[0]  ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |digital_clock|SelNumber:U6|Mux2   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Jan 10 23:32:05 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off digital_clock -c digital_clock
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/seltube/seltube.vhd
+    Info: Found design unit 1: SelTube-EE
+    Info: Found entity 1: SelTube
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/selnumber/selnumber.vhd
+    Info: Found design unit 1: SelNumber-dd
+    Info: Found entity 1: SelNumber
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/second/second.vhd
+    Info: Found design unit 1: SECOND-CC
+    Info: Found entity 1: SECOND
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/or_2/or_2.vhd
+    Info: Found design unit 1: OR_2-or2_behavior
+    Info: Found entity 1: OR_2
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/minute/minute.vhd
+    Info: Found design unit 1: MINUTE-BB
+    Info: Found entity 1: MINUTE
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/hour/hour.vhd
+    Info: Found design unit 1: HOUR-BHV
+    Info: Found entity 1: HOUR
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/fenpin/fenpin.vhd
+    Info: Found design unit 1: FENPIN-CCC_ARC
+    Info: Found entity 1: FENPIN
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/decoder/decoder.vhd
+    Info: Found design unit 1: DECODER-HH
+    Info: Found entity 1: DECODER
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/cnt6/cnt6.vhd
+    Info: Found design unit 1: CNT6-SM
+    Info: Found entity 1: CNT6
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/bell/bell.vhd
+    Info: Found design unit 1: bell-BAV
+    Info: Found entity 1: bell
+Info: Found 2 design units, including 1 entities, in source file /users/ganser/desktop/and_2/and_2.vhd
+    Info: Found design unit 1: AND_2-and2_behavior
+    Info: Found entity 1: AND_2
+Info: Found 2 design units, including 1 entities, in source file digital_clock.vhd
+    Info: Found design unit 1: digital_clock-BHV
+    Info: Found entity 1: digital_clock
+Info: Elaborating entity "digital_clock" for the top level hierarchy
+Info: Elaborating entity "FENPIN" for hierarchy "FENPIN:U1"
+Info: Elaborating entity "SECOND" for hierarchy "SECOND:U2"
+Info: Elaborating entity "MINUTE" for hierarchy "MINUTE:U3"
+Info: Elaborating entity "HOUR" for hierarchy "HOUR:U4"
+Warning (10492): VHDL Process Statement warning at HOUR.vhd(24): signal "COUNT_GE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at HOUR.vhd(25): signal "COUNT_SHI" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "bell" for hierarchy "bell:U5"
+Warning (10492): VHDL Process Statement warning at bell.vhd(17): signal "FLAG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bell.vhd(18): signal "FLAG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bell.vhd(24): signal "FLAG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at bell.vhd(15): inferring latch(es) for signal or variable "speaker", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "speaker" at bell.vhd(15)
+Info: Elaborating entity "SelNumber" for hierarchy "SelNumber:U6"
+Info: Elaborating entity "SelTube" for hierarchy "SelTube:U7"
+Info: Elaborating entity "CNT6" for hierarchy "CNT6:U8"
+Info: Elaborating entity "DECODER" for hierarchy "DECODER:U9"
+Info: Elaborating entity "OR_2" for hierarchy "OR_2:U10"
+Info: Elaborating entity "AND_2" for hierarchy "AND_2:U11"
+Info: Timing-Driven Synthesis is running
+Info: Implemented 126 device resources after synthesis - the final resource count might be different
+    Info: Implemented 4 input pins
+    Info: Implemented 14 output pins
+    Info: Implemented 108 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 255 megabytes
+    Info: Processing ended: Wed Jan 10 23:32:09 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
+
+

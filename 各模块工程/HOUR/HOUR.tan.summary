@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.775 ns
+From           : COUNT_GE[0]
+To             : QF[0]
+From Clock     : EN3
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'EN3'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : COUNT_GE[0]
+To             : COUNT_SHI[1]
+From Clock     : EN3
+To Clock       : EN3
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK3'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : COUNT_GE[0]
+To             : COUNT_SHI[1]
+From Clock     : CLK3
+To Clock       : CLK3
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

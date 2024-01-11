@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'FENPIN:U1|Q1'
+Slack : -3.722
+TNS   : -42.447
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -1.695
+TNS   : -11.820
+
+Type  : Slow 1200mV 85C Model Setup 'FENPIN:U1|X'
+Slack : -1.665
+TNS   : -16.878
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.024
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FENPIN:U1|Q1'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FENPIN:U1|X'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FENPIN:U1|Q1'
+Slack : -1.487
+TNS   : -38.662
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FENPIN:U1|X'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 0C Model Setup 'FENPIN:U1|Q1'
+Slack : -3.377
+TNS   : -37.278
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -1.512
+TNS   : -10.514
+
+Type  : Slow 1200mV 0C Model Setup 'FENPIN:U1|X'
+Slack : -1.444
+TNS   : -14.409
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FENPIN:U1|Q1'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FENPIN:U1|X'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -13.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FENPIN:U1|Q1'
+Slack : -1.487
+TNS   : -39.870
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FENPIN:U1|X'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Fast 1200mV 0C Model Setup 'FENPIN:U1|Q1'
+Slack : -1.127
+TNS   : -6.910
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.160
+TNS   : -0.922
+
+Type  : Fast 1200mV 0C Model Setup 'FENPIN:U1|X'
+Slack : -0.109
+TNS   : -0.981
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.158
+TNS   : -0.158
+
+Type  : Fast 1200mV 0C Model Hold 'FENPIN:U1|Q1'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FENPIN:U1|X'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -10.378
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FENPIN:U1|Q1'
+Slack : -1.000
+TNS   : -26.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FENPIN:U1|X'
+Slack : -1.000
+TNS   : -13.000
+
+------------------------------------------------------------

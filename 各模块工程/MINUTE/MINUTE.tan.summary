@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.989 ns
+From           : EN2
+To             : COUT2[3]
+From Clock     : --
+To Clock       : CLK2
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.595 ns
+From           : COUT1[0]
+To             : QD[0]
+From Clock     : CLK2
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.801 ns
+From           : EN2
+To             : COUT2[1]
+From Clock     : --
+To Clock       : CLK2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 477.55 MHz ( period = 2.094 ns )
+From           : COUT2[0]
+To             : COUT2[3]
+From Clock     : CLK2
+To Clock       : CLK2
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

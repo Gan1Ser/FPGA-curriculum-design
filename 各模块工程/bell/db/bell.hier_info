@@ -1,0 +1,29 @@
+|bell
+H_SHI[0] => ~NO_FANOUT~
+H_SHI[1] => ~NO_FANOUT~
+H_SHI[2] => ~NO_FANOUT~
+H_SHI[3] => ~NO_FANOUT~
+H_GE[0] => ~NO_FANOUT~
+H_GE[1] => ~NO_FANOUT~
+H_GE[2] => ~NO_FANOUT~
+H_GE[3] => ~NO_FANOUT~
+M_SHI[0] => Equal1.IN7
+M_SHI[1] => Equal1.IN6
+M_SHI[2] => Equal1.IN5
+M_SHI[3] => Equal1.IN4
+M_GE[0] => Equal2.IN7
+M_GE[1] => Equal2.IN6
+M_GE[2] => Equal2.IN5
+M_GE[3] => Equal2.IN4
+S_SHI[0] => Equal3.IN7
+S_SHI[1] => Equal3.IN6
+S_SHI[2] => Equal3.IN5
+S_SHI[3] => Equal3.IN4
+S_GE[0] => Equal4.IN7
+S_GE[1] => Equal4.IN6
+S_GE[2] => Equal4.IN5
+S_GE[3] => Equal4.IN4
+speaker <= speaker.DB_MAX_OUTPUT_PORT_TYPE
+CLK4 => speaker.DATAB
+
+

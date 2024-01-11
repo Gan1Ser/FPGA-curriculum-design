@@ -1,0 +1,278 @@
+|digital_clock
+CLK => FENPIN:U1.CLK6
+SA => OR_2:U12.b
+SB => OR_2:U10.b
+SC => SECOND:U2.EN1
+qw <= bell:U5.speaker
+r[0] <= SelTube:U7.B[0]
+r[1] <= SelTube:U7.B[1]
+r[2] <= SelTube:U7.B[2]
+r[3] <= SelTube:U7.B[3]
+r[4] <= SelTube:U7.B[4]
+r[5] <= SelTube:U7.B[5]
+qout[0] <= DECODER:U9.hex[0]
+qout[1] <= DECODER:U9.hex[1]
+qout[2] <= DECODER:U9.hex[2]
+qout[3] <= DECODER:U9.hex[3]
+qout[4] <= DECODER:U9.hex[4]
+qout[5] <= DECODER:U9.hex[5]
+qout[6] <= DECODER:U9.hex[6]
+
+
+|digital_clock|FENPIN:U1
+CLK6 => X.CLK
+CLK6 => CNT[0].CLK
+CLK6 => CNT[1].CLK
+CLK6 => CNT[2].CLK
+CLK6 => CNT[3].CLK
+CLK6 => CNT[4].CLK
+CLK6 => CNT[5].CLK
+Q1000 <= X.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= Q1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|SECOND:U2
+CLK1 => MM.CLK
+CLK1 => COUT1[0].CLK
+CLK1 => COUT1[1].CLK
+CLK1 => COUT1[2].CLK
+CLK1 => COUT1[3].CLK
+CLK1 => COUT2[0].CLK
+CLK1 => COUT2[1].CLK
+CLK1 => COUT2[2].CLK
+CLK1 => COUT2[3].CLK
+EN1 => COUT1[0].ACLR
+EN1 => COUT1[1].ACLR
+EN1 => COUT1[2].ACLR
+EN1 => COUT1[3].ACLR
+EN1 => COUT2[0].ACLR
+EN1 => COUT2[1].ACLR
+EN1 => COUT2[2].ACLR
+EN1 => COUT2[3].ACLR
+EN1 => MM.ENA
+QA[0] <= COUT2[0].DB_MAX_OUTPUT_PORT_TYPE
+QA[1] <= COUT2[1].DB_MAX_OUTPUT_PORT_TYPE
+QA[2] <= COUT2[2].DB_MAX_OUTPUT_PORT_TYPE
+QA[3] <= COUT2[3].DB_MAX_OUTPUT_PORT_TYPE
+CO1 <= MM.DB_MAX_OUTPUT_PORT_TYPE
+QB[0] <= COUT1[0].DB_MAX_OUTPUT_PORT_TYPE
+QB[1] <= COUT1[1].DB_MAX_OUTPUT_PORT_TYPE
+QB[2] <= COUT1[2].DB_MAX_OUTPUT_PORT_TYPE
+QB[3] <= COUT1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|MINUTE:U3
+CLK2 => COUT2[0].CLK
+CLK2 => COUT2[1].CLK
+CLK2 => COUT2[2].CLK
+CLK2 => COUT2[3].CLK
+CLK2 => COUT1[0].CLK
+CLK2 => COUT1[1].CLK
+CLK2 => COUT1[2].CLK
+CLK2 => COUT1[3].CLK
+CLK2 => CC.CLK
+EN2 => COUT2[0].ENA
+EN2 => CC.ENA
+EN2 => COUT1[3].ENA
+EN2 => COUT1[2].ENA
+EN2 => COUT1[1].ENA
+EN2 => COUT1[0].ENA
+EN2 => COUT2[3].ENA
+EN2 => COUT2[2].ENA
+EN2 => COUT2[1].ENA
+QC[0] <= COUT2[0].DB_MAX_OUTPUT_PORT_TYPE
+QC[1] <= COUT2[1].DB_MAX_OUTPUT_PORT_TYPE
+QC[2] <= COUT2[2].DB_MAX_OUTPUT_PORT_TYPE
+QC[3] <= COUT2[3].DB_MAX_OUTPUT_PORT_TYPE
+CO2 <= CC.DB_MAX_OUTPUT_PORT_TYPE
+QD[0] <= COUT1[0].DB_MAX_OUTPUT_PORT_TYPE
+QD[1] <= COUT1[1].DB_MAX_OUTPUT_PORT_TYPE
+QD[2] <= COUT1[2].DB_MAX_OUTPUT_PORT_TYPE
+QD[3] <= COUT1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|HOUR:U4
+CLK3 => CLK.IN0
+EN3 => CLK.IN1
+QE[0] <= COUNT_SHI[0].DB_MAX_OUTPUT_PORT_TYPE
+QE[1] <= COUNT_SHI[1].DB_MAX_OUTPUT_PORT_TYPE
+QE[2] <= COUNT_SHI[2].DB_MAX_OUTPUT_PORT_TYPE
+QE[3] <= COUNT_SHI[3].DB_MAX_OUTPUT_PORT_TYPE
+QF[0] <= COUNT_GE[0].DB_MAX_OUTPUT_PORT_TYPE
+QF[1] <= COUNT_GE[1].DB_MAX_OUTPUT_PORT_TYPE
+QF[2] <= COUNT_GE[2].DB_MAX_OUTPUT_PORT_TYPE
+QF[3] <= COUNT_GE[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|bell:U5
+H_SHI[0] => Equal0.IN11
+H_SHI[1] => Equal0.IN10
+H_SHI[2] => Equal0.IN9
+H_SHI[3] => Equal0.IN8
+H_GE[0] => Equal0.IN15
+H_GE[1] => Equal0.IN14
+H_GE[2] => Equal0.IN13
+H_GE[3] => Equal0.IN12
+M_SHI[0] => Equal4.IN7
+M_SHI[1] => Equal4.IN6
+M_SHI[2] => Equal4.IN5
+M_SHI[3] => Equal4.IN4
+M_GE[0] => Equal1.IN7
+M_GE[0] => Equal5.IN7
+M_GE[1] => Equal1.IN6
+M_GE[1] => Equal5.IN6
+M_GE[2] => Equal1.IN5
+M_GE[2] => Equal5.IN5
+M_GE[3] => Equal1.IN4
+M_GE[3] => Equal5.IN4
+S_SHI[0] => Equal3.IN7
+S_SHI[0] => Equal6.IN7
+S_SHI[1] => Equal3.IN6
+S_SHI[1] => Equal6.IN6
+S_SHI[2] => Equal3.IN5
+S_SHI[2] => Equal6.IN5
+S_SHI[3] => Equal3.IN4
+S_SHI[3] => Equal6.IN4
+S_GE[0] => Equal2.IN7
+S_GE[1] => Equal2.IN6
+S_GE[2] => Equal2.IN5
+S_GE[3] => Equal2.IN4
+speaker <= speaker.DB_MAX_OUTPUT_PORT_TYPE
+CLK4 => ~NO_FANOUT~
+
+
+|digital_clock|SelNumber:U6
+n1[0] => Mux3.IN2
+n1[1] => Mux2.IN2
+n1[2] => Mux1.IN2
+n1[3] => Mux0.IN2
+n2[0] => Mux3.IN3
+n2[1] => Mux2.IN3
+n2[2] => Mux1.IN3
+n2[3] => Mux0.IN3
+n3[0] => Mux3.IN4
+n3[1] => Mux2.IN4
+n3[2] => Mux1.IN4
+n3[3] => Mux0.IN4
+n4[0] => Mux3.IN5
+n4[1] => Mux2.IN5
+n4[2] => Mux1.IN5
+n4[3] => Mux0.IN5
+n5[0] => Mux3.IN6
+n5[1] => Mux2.IN6
+n5[2] => Mux1.IN6
+n5[3] => Mux0.IN6
+n6[0] => Mux3.IN7
+n6[1] => Mux2.IN7
+n6[2] => Mux1.IN7
+n6[3] => Mux0.IN7
+a[0] => Mux0.IN10
+a[0] => Mux1.IN10
+a[0] => Mux2.IN10
+a[0] => Mux3.IN10
+a[1] => Mux0.IN9
+a[1] => Mux1.IN9
+a[1] => Mux2.IN9
+a[1] => Mux3.IN9
+a[2] => Mux0.IN8
+a[2] => Mux1.IN8
+a[2] => Mux2.IN8
+a[2] => Mux3.IN8
+qqq[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+qqq[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+qqq[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+qqq[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|SelTube:U7
+M[0] => Mux0.IN10
+M[0] => Mux1.IN10
+M[0] => Mux2.IN10
+M[0] => Mux3.IN10
+M[0] => Mux4.IN10
+M[0] => Mux5.IN10
+M[1] => Mux0.IN9
+M[1] => Mux1.IN9
+M[1] => Mux2.IN9
+M[1] => Mux3.IN9
+M[1] => Mux4.IN9
+M[1] => Mux5.IN9
+M[2] => Mux0.IN8
+M[2] => Mux1.IN8
+M[2] => Mux2.IN8
+M[2] => Mux3.IN8
+M[2] => Mux4.IN8
+M[2] => Mux5.IN8
+B[0] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+B[4] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+B[5] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|CNT6:U8
+CLK5 => cnt[0].CLK
+CLK5 => cnt[1].CLK
+CLK5 => cnt[2].CLK
+N[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+N[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+N[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|DECODER:U9
+a[0] => Mux0.IN19
+a[0] => Mux1.IN19
+a[0] => Mux2.IN19
+a[0] => Mux3.IN19
+a[0] => Mux4.IN19
+a[0] => Mux5.IN19
+a[0] => Mux6.IN19
+a[1] => Mux0.IN18
+a[1] => Mux1.IN18
+a[1] => Mux2.IN18
+a[1] => Mux3.IN18
+a[1] => Mux4.IN18
+a[1] => Mux5.IN18
+a[1] => Mux6.IN18
+a[2] => Mux0.IN17
+a[2] => Mux1.IN17
+a[2] => Mux2.IN17
+a[2] => Mux3.IN17
+a[2] => Mux4.IN17
+a[2] => Mux5.IN17
+a[2] => Mux6.IN17
+a[3] => Mux0.IN16
+a[3] => Mux1.IN16
+a[3] => Mux2.IN16
+a[3] => Mux3.IN16
+a[3] => Mux4.IN16
+a[3] => Mux5.IN16
+a[3] => Mux6.IN16
+hex[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|OR_2:U10
+a => c.IN0
+b => c.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|AND_2:U11
+a => c.IN0
+b => c.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock|OR_2:U12
+a => c.IN0
+b => c.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,455 @@
+Simulator report for TIMECLOCK
+Thu Jan 11 08:04:39 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 3800.0 s     ;
+; Simulation Netlist Size     ; 194 nodes    ;
+; Simulation Coverage         ;      65.28 % ;
+; Total Number of Transitions ; 921541307    ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C40Q240C8 ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; TIMECLOCK1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport      ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport      ; Transport     ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      65.28 % ;
+; Total nodes checked                                 ; 194          ;
+; Total output ports checked                          ; 216          ;
+; Total output ports with complete 1/0-value coverage ; 141          ;
+; Total output ports with no 1/0-value coverage       ; 75           ;
+; Total output ports with no 1-value coverage         ; 75           ;
+; Total output ports with no 0-value coverage         ; 75           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                    ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |TIMECLOCK|SECOND:inst16|Add0~0      ; |TIMECLOCK|SECOND:inst16|Add0~0      ; combout          ;
+; |TIMECLOCK|SECOND:inst16|Add0~0      ; |TIMECLOCK|SECOND:inst16|Add0~1      ; cout             ;
+; |TIMECLOCK|SECOND:inst16|Add0~2      ; |TIMECLOCK|SECOND:inst16|Add0~2      ; combout          ;
+; |TIMECLOCK|SECOND:inst16|Add0~2      ; |TIMECLOCK|SECOND:inst16|Add0~3      ; cout             ;
+; |TIMECLOCK|SECOND:inst16|Add0~4      ; |TIMECLOCK|SECOND:inst16|Add0~4      ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[0]     ; |TIMECLOCK|FENPIN:inst11|CNT2[0]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[1]     ; |TIMECLOCK|FENPIN:inst11|CNT2[1]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[2]     ; |TIMECLOCK|FENPIN:inst11|CNT2[2]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[3]     ; |TIMECLOCK|FENPIN:inst11|CNT2[3]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[4]     ; |TIMECLOCK|FENPIN:inst11|CNT2[4]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[5]     ; |TIMECLOCK|FENPIN:inst11|CNT2[5]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[6]     ; |TIMECLOCK|FENPIN:inst11|CNT2[6]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[7]     ; |TIMECLOCK|FENPIN:inst11|CNT2[7]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT[4]      ; |TIMECLOCK|FENPIN:inst11|CNT[4]      ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT[0]      ; |TIMECLOCK|FENPIN:inst11|CNT[0]      ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT[1]      ; |TIMECLOCK|FENPIN:inst11|CNT[1]      ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT[2]      ; |TIMECLOCK|FENPIN:inst11|CNT[2]      ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT[3]      ; |TIMECLOCK|FENPIN:inst11|CNT[3]      ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[0]~9   ; |TIMECLOCK|FENPIN:inst11|CNT2[0]~9   ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[0]~9   ; |TIMECLOCK|FENPIN:inst11|CNT2[0]~10  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[1]~11  ; |TIMECLOCK|FENPIN:inst11|CNT2[1]~11  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[1]~11  ; |TIMECLOCK|FENPIN:inst11|CNT2[1]~12  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[2]~13  ; |TIMECLOCK|FENPIN:inst11|CNT2[2]~13  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[2]~13  ; |TIMECLOCK|FENPIN:inst11|CNT2[2]~14  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[3]~15  ; |TIMECLOCK|FENPIN:inst11|CNT2[3]~15  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[3]~15  ; |TIMECLOCK|FENPIN:inst11|CNT2[3]~16  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[4]~17  ; |TIMECLOCK|FENPIN:inst11|CNT2[4]~17  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[4]~17  ; |TIMECLOCK|FENPIN:inst11|CNT2[4]~18  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[5]~19  ; |TIMECLOCK|FENPIN:inst11|CNT2[5]~19  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[5]~19  ; |TIMECLOCK|FENPIN:inst11|CNT2[5]~20  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[6]~21  ; |TIMECLOCK|FENPIN:inst11|CNT2[6]~21  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[6]~21  ; |TIMECLOCK|FENPIN:inst11|CNT2[6]~22  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[7]~23  ; |TIMECLOCK|FENPIN:inst11|CNT2[7]~23  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[7]~23  ; |TIMECLOCK|FENPIN:inst11|CNT2[7]~24  ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[8]~25  ; |TIMECLOCK|FENPIN:inst11|CNT2[8]~25  ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT[0]~6    ; |TIMECLOCK|FENPIN:inst11|CNT[0]~6    ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT[0]~6    ; |TIMECLOCK|FENPIN:inst11|CNT[0]~7    ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT[1]~8    ; |TIMECLOCK|FENPIN:inst11|CNT[1]~8    ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT[1]~8    ; |TIMECLOCK|FENPIN:inst11|CNT[1]~9    ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT[2]~10   ; |TIMECLOCK|FENPIN:inst11|CNT[2]~10   ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT[2]~10   ; |TIMECLOCK|FENPIN:inst11|CNT[2]~11   ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT[3]~12   ; |TIMECLOCK|FENPIN:inst11|CNT[3]~12   ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT[3]~12   ; |TIMECLOCK|FENPIN:inst11|CNT[3]~13   ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT[4]~14   ; |TIMECLOCK|FENPIN:inst11|CNT[4]~14   ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT[4]~14   ; |TIMECLOCK|FENPIN:inst11|CNT[4]~15   ; cout             ;
+; |TIMECLOCK|FENPIN:inst11|CNT[5]~16   ; |TIMECLOCK|FENPIN:inst11|CNT[5]~16   ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT2[1]    ; |TIMECLOCK|SECOND:inst16|COUT2[1]    ; q                ;
+; |TIMECLOCK|SECOND:inst16|COUT2[2]    ; |TIMECLOCK|SECOND:inst16|COUT2[2]    ; q                ;
+; |TIMECLOCK|SECOND:inst16|COUT2[0]    ; |TIMECLOCK|SECOND:inst16|COUT2[0]    ; q                ;
+; |TIMECLOCK|bell:inst8|speaker~0      ; |TIMECLOCK|bell:inst8|speaker~0      ; combout          ;
+; |TIMECLOCK|bell:inst8|speaker~2      ; |TIMECLOCK|bell:inst8|speaker~2      ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT1[2]    ; |TIMECLOCK|SECOND:inst16|COUT1[2]    ; q                ;
+; |TIMECLOCK|SECOND:inst16|COUT1[1]    ; |TIMECLOCK|SECOND:inst16|COUT1[1]    ; q                ;
+; |TIMECLOCK|SECOND:inst16|COUT1[3]    ; |TIMECLOCK|SECOND:inst16|COUT1[3]    ; q                ;
+; |TIMECLOCK|SECOND:inst16|COUT1[0]    ; |TIMECLOCK|SECOND:inst16|COUT1[0]    ; q                ;
+; |TIMECLOCK|bell:inst8|speaker~3      ; |TIMECLOCK|bell:inst8|speaker~3      ; combout          ;
+; |TIMECLOCK|CNT6:inst9|cnt[2]         ; |TIMECLOCK|CNT6:inst9|cnt[2]         ; q                ;
+; |TIMECLOCK|CNT6:inst9|cnt[0]         ; |TIMECLOCK|CNT6:inst9|cnt[0]         ; q                ;
+; |TIMECLOCK|SelNumber:inst17|Mux3~0   ; |TIMECLOCK|SelNumber:inst17|Mux3~0   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux3~1   ; |TIMECLOCK|SelNumber:inst17|Mux3~1   ; combout          ;
+; |TIMECLOCK|CNT6:inst9|cnt[1]         ; |TIMECLOCK|CNT6:inst9|cnt[1]         ; q                ;
+; |TIMECLOCK|SelNumber:inst17|Mux3~3   ; |TIMECLOCK|SelNumber:inst17|Mux3~3   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux2~0   ; |TIMECLOCK|SelNumber:inst17|Mux2~0   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux2~1   ; |TIMECLOCK|SelNumber:inst17|Mux2~1   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux2~3   ; |TIMECLOCK|SelNumber:inst17|Mux2~3   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux1~0   ; |TIMECLOCK|SelNumber:inst17|Mux1~0   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux1~1   ; |TIMECLOCK|SelNumber:inst17|Mux1~1   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux1~3   ; |TIMECLOCK|SelNumber:inst17|Mux1~3   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux0~0   ; |TIMECLOCK|SelNumber:inst17|Mux0~0   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux0~1   ; |TIMECLOCK|SelNumber:inst17|Mux0~1   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux0~3   ; |TIMECLOCK|SelNumber:inst17|Mux0~3   ; combout          ;
+; |TIMECLOCK|DECODER:inst10|Mux0~0     ; |TIMECLOCK|DECODER:inst10|Mux0~0     ; combout          ;
+; |TIMECLOCK|DECODER:inst10|Mux1~0     ; |TIMECLOCK|DECODER:inst10|Mux1~0     ; combout          ;
+; |TIMECLOCK|DECODER:inst10|Mux2~0     ; |TIMECLOCK|DECODER:inst10|Mux2~0     ; combout          ;
+; |TIMECLOCK|DECODER:inst10|Mux3~0     ; |TIMECLOCK|DECODER:inst10|Mux3~0     ; combout          ;
+; |TIMECLOCK|DECODER:inst10|Mux4~0     ; |TIMECLOCK|DECODER:inst10|Mux4~0     ; combout          ;
+; |TIMECLOCK|DECODER:inst10|Mux5~0     ; |TIMECLOCK|DECODER:inst10|Mux5~0     ; combout          ;
+; |TIMECLOCK|DECODER:inst10|Mux6~0     ; |TIMECLOCK|DECODER:inst10|Mux6~0     ; combout          ;
+; |TIMECLOCK|SelTube:inst18|Mux0~0     ; |TIMECLOCK|SelTube:inst18|Mux0~0     ; combout          ;
+; |TIMECLOCK|SelTube:inst18|Mux0~1     ; |TIMECLOCK|SelTube:inst18|Mux0~1     ; combout          ;
+; |TIMECLOCK|SelTube:inst18|Mux0~2     ; |TIMECLOCK|SelTube:inst18|Mux0~2     ; combout          ;
+; |TIMECLOCK|SelTube:inst18|Mux0~3     ; |TIMECLOCK|SelTube:inst18|Mux0~3     ; combout          ;
+; |TIMECLOCK|SelTube:inst18|Mux0~4     ; |TIMECLOCK|SelTube:inst18|Mux0~4     ; combout          ;
+; |TIMECLOCK|SelTube:inst18|Mux0~5     ; |TIMECLOCK|SelTube:inst18|Mux0~5     ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|Q1          ; |TIMECLOCK|FENPIN:inst11|Q1          ; q                ;
+; |TIMECLOCK|SECOND:inst16|MM          ; |TIMECLOCK|SECOND:inst16|MM          ; q                ;
+; |TIMECLOCK|OR_2:inst15|c             ; |TIMECLOCK|OR_2:inst15|c             ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[0]~0  ; |TIMECLOCK|MINUTE:inst13|COUT2[0]~0  ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[1]~1  ; |TIMECLOCK|MINUTE:inst13|COUT2[1]~1  ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT1~0     ; |TIMECLOCK|SECOND:inst16|COUT1~0     ; combout          ;
+; |TIMECLOCK|SECOND:inst16|process_0~0 ; |TIMECLOCK|SECOND:inst16|process_0~0 ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT2[1]~0  ; |TIMECLOCK|SECOND:inst16|COUT2[1]~0  ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT2[2]~1  ; |TIMECLOCK|SECOND:inst16|COUT2[2]~1  ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT1~1     ; |TIMECLOCK|SECOND:inst16|COUT1~1     ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT1~2     ; |TIMECLOCK|SECOND:inst16|COUT1~2     ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT1~3     ; |TIMECLOCK|SECOND:inst16|COUT1~3     ; combout          ;
+; |TIMECLOCK|CNT6:inst9|cnt~0          ; |TIMECLOCK|CNT6:inst9|cnt~0          ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|X           ; |TIMECLOCK|FENPIN:inst11|X           ; q                ;
+; |TIMECLOCK|CNT6:inst9|cnt~1          ; |TIMECLOCK|CNT6:inst9|cnt~1          ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|LessThan1~0 ; |TIMECLOCK|FENPIN:inst11|LessThan1~0 ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|LessThan1~1 ; |TIMECLOCK|FENPIN:inst11|LessThan1~1 ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|LessThan1~2 ; |TIMECLOCK|FENPIN:inst11|LessThan1~2 ; combout          ;
+; |TIMECLOCK|SECOND:inst16|MM~0        ; |TIMECLOCK|SECOND:inst16|MM~0        ; combout          ;
+; |TIMECLOCK|SECOND:inst16|MM~1        ; |TIMECLOCK|SECOND:inst16|MM~1        ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|LessThan0~0 ; |TIMECLOCK|FENPIN:inst11|LessThan0~0 ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|X~0         ; |TIMECLOCK|FENPIN:inst11|X~0         ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|LessThan0~1 ; |TIMECLOCK|FENPIN:inst11|LessThan0~1 ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT1[0]~5  ; |TIMECLOCK|SECOND:inst16|COUT1[0]~5  ; combout          ;
+; |TIMECLOCK|CNT6:inst9|cnt[0]~2       ; |TIMECLOCK|CNT6:inst9|cnt[0]~2       ; combout          ;
+; |TIMECLOCK|qout[6]~output            ; |TIMECLOCK|qout[6]~output            ; o                ;
+; |TIMECLOCK|qout[6]                   ; |TIMECLOCK|qout[6]                   ; padout           ;
+; |TIMECLOCK|qout[5]~output            ; |TIMECLOCK|qout[5]~output            ; o                ;
+; |TIMECLOCK|qout[5]                   ; |TIMECLOCK|qout[5]                   ; padout           ;
+; |TIMECLOCK|qout[4]~output            ; |TIMECLOCK|qout[4]~output            ; o                ;
+; |TIMECLOCK|qout[4]                   ; |TIMECLOCK|qout[4]                   ; padout           ;
+; |TIMECLOCK|qout[3]~output            ; |TIMECLOCK|qout[3]~output            ; o                ;
+; |TIMECLOCK|qout[3]                   ; |TIMECLOCK|qout[3]                   ; padout           ;
+; |TIMECLOCK|qout[2]~output            ; |TIMECLOCK|qout[2]~output            ; o                ;
+; |TIMECLOCK|qout[2]                   ; |TIMECLOCK|qout[2]                   ; padout           ;
+; |TIMECLOCK|qout[1]~output            ; |TIMECLOCK|qout[1]~output            ; o                ;
+; |TIMECLOCK|qout[1]                   ; |TIMECLOCK|qout[1]                   ; padout           ;
+; |TIMECLOCK|qout[0]~output            ; |TIMECLOCK|qout[0]~output            ; o                ;
+; |TIMECLOCK|qout[0]                   ; |TIMECLOCK|qout[0]                   ; padout           ;
+; |TIMECLOCK|r[5]~output               ; |TIMECLOCK|r[5]~output               ; o                ;
+; |TIMECLOCK|r[5]                      ; |TIMECLOCK|r[5]                      ; padout           ;
+; |TIMECLOCK|r[4]~output               ; |TIMECLOCK|r[4]~output               ; o                ;
+; |TIMECLOCK|r[4]                      ; |TIMECLOCK|r[4]                      ; padout           ;
+; |TIMECLOCK|r[3]~output               ; |TIMECLOCK|r[3]~output               ; o                ;
+; |TIMECLOCK|r[3]                      ; |TIMECLOCK|r[3]                      ; padout           ;
+; |TIMECLOCK|r[2]~output               ; |TIMECLOCK|r[2]~output               ; o                ;
+; |TIMECLOCK|r[2]                      ; |TIMECLOCK|r[2]                      ; padout           ;
+; |TIMECLOCK|r[1]~output               ; |TIMECLOCK|r[1]~output               ; o                ;
+; |TIMECLOCK|r[1]                      ; |TIMECLOCK|r[1]                      ; padout           ;
+; |TIMECLOCK|r[0]~output               ; |TIMECLOCK|r[0]~output               ; o                ;
+; |TIMECLOCK|r[0]                      ; |TIMECLOCK|r[0]                      ; padout           ;
+; |TIMECLOCK|CLK~input                 ; |TIMECLOCK|CLK~input                 ; o                ;
+; |TIMECLOCK|CLK                       ; |TIMECLOCK|CLK                       ; padout           ;
+; |TIMECLOCK|FENPIN:inst11|X~clkctrl   ; |TIMECLOCK|FENPIN:inst11|X~clkctrl   ; outclk           ;
+; |TIMECLOCK|FENPIN:inst11|Q1~clkctrl  ; |TIMECLOCK|FENPIN:inst11|Q1~clkctrl  ; outclk           ;
+; |TIMECLOCK|FENPIN:inst11|Q1~feeder   ; |TIMECLOCK|FENPIN:inst11|Q1~feeder   ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|X~feeder    ; |TIMECLOCK|FENPIN:inst11|X~feeder    ; combout          ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |TIMECLOCK|MINUTE:inst13|Add0~0      ; |TIMECLOCK|MINUTE:inst13|Add0~0      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|Add0~0      ; |TIMECLOCK|MINUTE:inst13|Add0~1      ; cout             ;
+; |TIMECLOCK|MINUTE:inst13|Add0~2      ; |TIMECLOCK|MINUTE:inst13|Add0~2      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|Add0~2      ; |TIMECLOCK|MINUTE:inst13|Add0~3      ; cout             ;
+; |TIMECLOCK|MINUTE:inst13|Add0~4      ; |TIMECLOCK|MINUTE:inst13|Add0~4      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|Add0~4      ; |TIMECLOCK|MINUTE:inst13|Add0~5      ; cout             ;
+; |TIMECLOCK|MINUTE:inst13|Add0~6      ; |TIMECLOCK|MINUTE:inst13|Add0~6      ; combout          ;
+; |TIMECLOCK|SECOND:inst16|Add0~4      ; |TIMECLOCK|SECOND:inst16|Add0~5      ; cout             ;
+; |TIMECLOCK|SECOND:inst16|Add0~6      ; |TIMECLOCK|SECOND:inst16|Add0~6      ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~0        ; |TIMECLOCK|HOUR:inst12|Add1~0        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~0        ; |TIMECLOCK|HOUR:inst12|Add1~1        ; cout             ;
+; |TIMECLOCK|HOUR:inst12|Add1~2        ; |TIMECLOCK|HOUR:inst12|Add1~2        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~2        ; |TIMECLOCK|HOUR:inst12|Add1~3        ; cout             ;
+; |TIMECLOCK|HOUR:inst12|Add1~4        ; |TIMECLOCK|HOUR:inst12|Add1~4        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~4        ; |TIMECLOCK|HOUR:inst12|Add1~5        ; cout             ;
+; |TIMECLOCK|HOUR:inst12|Add1~6        ; |TIMECLOCK|HOUR:inst12|Add1~6        ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[8]     ; |TIMECLOCK|FENPIN:inst11|CNT2[8]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT[5]      ; |TIMECLOCK|FENPIN:inst11|CNT[5]      ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[2]    ; |TIMECLOCK|MINUTE:inst13|COUT1[2]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[1]    ; |TIMECLOCK|MINUTE:inst13|COUT1[1]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[3]    ; |TIMECLOCK|MINUTE:inst13|COUT2[3]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[1]    ; |TIMECLOCK|MINUTE:inst13|COUT2[1]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|process_0~0 ; |TIMECLOCK|MINUTE:inst13|process_0~0 ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT2[3]    ; |TIMECLOCK|SECOND:inst16|COUT2[3]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[0]    ; |TIMECLOCK|MINUTE:inst13|COUT2[0]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[3]    ; |TIMECLOCK|MINUTE:inst13|COUT1[3]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[2]    ; |TIMECLOCK|MINUTE:inst13|COUT2[2]    ; q                ;
+; |TIMECLOCK|bell:inst8|speaker~1      ; |TIMECLOCK|bell:inst8|speaker~1      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[0]    ; |TIMECLOCK|MINUTE:inst13|COUT1[0]    ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[2]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[2]   ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[3]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[3]   ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[0]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[0]  ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[2]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[2]  ; q                ;
+; |TIMECLOCK|bell:inst8|Equal0~0       ; |TIMECLOCK|bell:inst8|Equal0~0       ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[1]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[1]  ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[1]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[1]   ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[0]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[0]   ; q                ;
+; |TIMECLOCK|bell:inst8|Equal0~1       ; |TIMECLOCK|bell:inst8|Equal0~1       ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[3]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[3]  ; q                ;
+; |TIMECLOCK|bell:inst8|Equal0~2       ; |TIMECLOCK|bell:inst8|Equal0~2       ; combout          ;
+; |TIMECLOCK|bell:inst8|speaker~4      ; |TIMECLOCK|bell:inst8|speaker~4      ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux3~2   ; |TIMECLOCK|SelNumber:inst17|Mux3~2   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux2~2   ; |TIMECLOCK|SelNumber:inst17|Mux2~2   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux1~2   ; |TIMECLOCK|SelNumber:inst17|Mux1~2   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux0~2   ; |TIMECLOCK|SelNumber:inst17|Mux0~2   ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~0     ; |TIMECLOCK|MINUTE:inst13|COUT1~0     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~1     ; |TIMECLOCK|MINUTE:inst13|COUT1~1     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~2     ; |TIMECLOCK|MINUTE:inst13|COUT1~2     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|process_0~1 ; |TIMECLOCK|MINUTE:inst13|process_0~1 ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|process_0~2 ; |TIMECLOCK|MINUTE:inst13|process_0~2 ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[1]~2  ; |TIMECLOCK|MINUTE:inst13|COUT2[1]~2  ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~3     ; |TIMECLOCK|MINUTE:inst13|COUT1~3     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[2]~3  ; |TIMECLOCK|MINUTE:inst13|COUT2[2]~3  ; combout          ;
+; |TIMECLOCK|HOUR:inst12|LessThan0~0   ; |TIMECLOCK|HOUR:inst12|LessThan0~0   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|process_0~0   ; |TIMECLOCK|HOUR:inst12|process_0~0   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|process_0~1   ; |TIMECLOCK|HOUR:inst12|process_0~1   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~0    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~0    ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add0~0        ; |TIMECLOCK|HOUR:inst12|Add0~0        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~1    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~1    ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI~0   ; |TIMECLOCK|HOUR:inst12|COUNT_SHI~0   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~2    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~2    ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~3    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~3    ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|CC          ; |TIMECLOCK|MINUTE:inst13|CC          ; q                ;
+; |TIMECLOCK|HOUR:inst12|CLK           ; |TIMECLOCK|HOUR:inst12|CLK           ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|process_0~3 ; |TIMECLOCK|MINUTE:inst13|process_0~3 ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[0]~5  ; |TIMECLOCK|MINUTE:inst13|COUT1[0]~5  ; combout          ;
+; |TIMECLOCK|qw~output                 ; |TIMECLOCK|qw~output                 ; o                ;
+; |TIMECLOCK|qw                        ; |TIMECLOCK|qw                        ; padout           ;
+; |TIMECLOCK|SB~input                  ; |TIMECLOCK|SB~input                  ; o                ;
+; |TIMECLOCK|SB                        ; |TIMECLOCK|SB                        ; padout           ;
+; |TIMECLOCK|SC~input                  ; |TIMECLOCK|SC~input                  ; o                ;
+; |TIMECLOCK|SC                        ; |TIMECLOCK|SC                        ; padout           ;
+; |TIMECLOCK|SA~input                  ; |TIMECLOCK|SA~input                  ; o                ;
+; |TIMECLOCK|SA                        ; |TIMECLOCK|SA                        ; padout           ;
+; |TIMECLOCK|HOUR:inst12|CLK~clkctrl   ; |TIMECLOCK|HOUR:inst12|CLK~clkctrl   ; outclk           ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |TIMECLOCK|MINUTE:inst13|Add0~0      ; |TIMECLOCK|MINUTE:inst13|Add0~0      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|Add0~0      ; |TIMECLOCK|MINUTE:inst13|Add0~1      ; cout             ;
+; |TIMECLOCK|MINUTE:inst13|Add0~2      ; |TIMECLOCK|MINUTE:inst13|Add0~2      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|Add0~2      ; |TIMECLOCK|MINUTE:inst13|Add0~3      ; cout             ;
+; |TIMECLOCK|MINUTE:inst13|Add0~4      ; |TIMECLOCK|MINUTE:inst13|Add0~4      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|Add0~4      ; |TIMECLOCK|MINUTE:inst13|Add0~5      ; cout             ;
+; |TIMECLOCK|MINUTE:inst13|Add0~6      ; |TIMECLOCK|MINUTE:inst13|Add0~6      ; combout          ;
+; |TIMECLOCK|SECOND:inst16|Add0~4      ; |TIMECLOCK|SECOND:inst16|Add0~5      ; cout             ;
+; |TIMECLOCK|SECOND:inst16|Add0~6      ; |TIMECLOCK|SECOND:inst16|Add0~6      ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~0        ; |TIMECLOCK|HOUR:inst12|Add1~0        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~0        ; |TIMECLOCK|HOUR:inst12|Add1~1        ; cout             ;
+; |TIMECLOCK|HOUR:inst12|Add1~2        ; |TIMECLOCK|HOUR:inst12|Add1~2        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~2        ; |TIMECLOCK|HOUR:inst12|Add1~3        ; cout             ;
+; |TIMECLOCK|HOUR:inst12|Add1~4        ; |TIMECLOCK|HOUR:inst12|Add1~4        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add1~4        ; |TIMECLOCK|HOUR:inst12|Add1~5        ; cout             ;
+; |TIMECLOCK|HOUR:inst12|Add1~6        ; |TIMECLOCK|HOUR:inst12|Add1~6        ; combout          ;
+; |TIMECLOCK|FENPIN:inst11|CNT2[8]     ; |TIMECLOCK|FENPIN:inst11|CNT2[8]     ; q                ;
+; |TIMECLOCK|FENPIN:inst11|CNT[5]      ; |TIMECLOCK|FENPIN:inst11|CNT[5]      ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[2]    ; |TIMECLOCK|MINUTE:inst13|COUT1[2]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[1]    ; |TIMECLOCK|MINUTE:inst13|COUT1[1]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[3]    ; |TIMECLOCK|MINUTE:inst13|COUT2[3]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[1]    ; |TIMECLOCK|MINUTE:inst13|COUT2[1]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|process_0~0 ; |TIMECLOCK|MINUTE:inst13|process_0~0 ; combout          ;
+; |TIMECLOCK|SECOND:inst16|COUT2[3]    ; |TIMECLOCK|SECOND:inst16|COUT2[3]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[0]    ; |TIMECLOCK|MINUTE:inst13|COUT2[0]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[3]    ; |TIMECLOCK|MINUTE:inst13|COUT1[3]    ; q                ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[2]    ; |TIMECLOCK|MINUTE:inst13|COUT2[2]    ; q                ;
+; |TIMECLOCK|bell:inst8|speaker~1      ; |TIMECLOCK|bell:inst8|speaker~1      ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[0]    ; |TIMECLOCK|MINUTE:inst13|COUT1[0]    ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[2]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[2]   ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[3]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[3]   ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[0]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[0]  ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[2]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[2]  ; q                ;
+; |TIMECLOCK|bell:inst8|Equal0~0       ; |TIMECLOCK|bell:inst8|Equal0~0       ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[1]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[1]  ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[1]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[1]   ; q                ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE[0]   ; |TIMECLOCK|HOUR:inst12|COUNT_GE[0]   ; q                ;
+; |TIMECLOCK|bell:inst8|Equal0~1       ; |TIMECLOCK|bell:inst8|Equal0~1       ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI[3]  ; |TIMECLOCK|HOUR:inst12|COUNT_SHI[3]  ; q                ;
+; |TIMECLOCK|bell:inst8|Equal0~2       ; |TIMECLOCK|bell:inst8|Equal0~2       ; combout          ;
+; |TIMECLOCK|bell:inst8|speaker~4      ; |TIMECLOCK|bell:inst8|speaker~4      ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux3~2   ; |TIMECLOCK|SelNumber:inst17|Mux3~2   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux2~2   ; |TIMECLOCK|SelNumber:inst17|Mux2~2   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux1~2   ; |TIMECLOCK|SelNumber:inst17|Mux1~2   ; combout          ;
+; |TIMECLOCK|SelNumber:inst17|Mux0~2   ; |TIMECLOCK|SelNumber:inst17|Mux0~2   ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~0     ; |TIMECLOCK|MINUTE:inst13|COUT1~0     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~1     ; |TIMECLOCK|MINUTE:inst13|COUT1~1     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~2     ; |TIMECLOCK|MINUTE:inst13|COUT1~2     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|process_0~1 ; |TIMECLOCK|MINUTE:inst13|process_0~1 ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|process_0~2 ; |TIMECLOCK|MINUTE:inst13|process_0~2 ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[1]~2  ; |TIMECLOCK|MINUTE:inst13|COUT2[1]~2  ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1~3     ; |TIMECLOCK|MINUTE:inst13|COUT1~3     ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT2[2]~3  ; |TIMECLOCK|MINUTE:inst13|COUT2[2]~3  ; combout          ;
+; |TIMECLOCK|HOUR:inst12|LessThan0~0   ; |TIMECLOCK|HOUR:inst12|LessThan0~0   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|process_0~0   ; |TIMECLOCK|HOUR:inst12|process_0~0   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|process_0~1   ; |TIMECLOCK|HOUR:inst12|process_0~1   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~0    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~0    ; combout          ;
+; |TIMECLOCK|HOUR:inst12|Add0~0        ; |TIMECLOCK|HOUR:inst12|Add0~0        ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~1    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~1    ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_SHI~0   ; |TIMECLOCK|HOUR:inst12|COUNT_SHI~0   ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~2    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~2    ; combout          ;
+; |TIMECLOCK|HOUR:inst12|COUNT_GE~3    ; |TIMECLOCK|HOUR:inst12|COUNT_GE~3    ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|CC          ; |TIMECLOCK|MINUTE:inst13|CC          ; q                ;
+; |TIMECLOCK|HOUR:inst12|CLK           ; |TIMECLOCK|HOUR:inst12|CLK           ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|process_0~3 ; |TIMECLOCK|MINUTE:inst13|process_0~3 ; combout          ;
+; |TIMECLOCK|MINUTE:inst13|COUT1[0]~5  ; |TIMECLOCK|MINUTE:inst13|COUT1[0]~5  ; combout          ;
+; |TIMECLOCK|qw~output                 ; |TIMECLOCK|qw~output                 ; o                ;
+; |TIMECLOCK|qw                        ; |TIMECLOCK|qw                        ; padout           ;
+; |TIMECLOCK|SB~input                  ; |TIMECLOCK|SB~input                  ; o                ;
+; |TIMECLOCK|SB                        ; |TIMECLOCK|SB                        ; padout           ;
+; |TIMECLOCK|SC~input                  ; |TIMECLOCK|SC~input                  ; o                ;
+; |TIMECLOCK|SC                        ; |TIMECLOCK|SC                        ; padout           ;
+; |TIMECLOCK|SA~input                  ; |TIMECLOCK|SA~input                  ; o                ;
+; |TIMECLOCK|SA                        ; |TIMECLOCK|SA                        ; padout           ;
+; |TIMECLOCK|HOUR:inst12|CLK~clkctrl   ; |TIMECLOCK|HOUR:inst12|CLK~clkctrl   ; outclk           ;
++--------------------------------------+--------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Jan 11 07:05:48 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off TIMECLOCK -c TIMECLOCK
+Info: Using vector source file "C:/Users/GanSer/Desktop/TIMECLOCK/TIMECLOCK1.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 6 sub-simulations
+Info: Simulation coverage is      65.28 %
+Info: Number of transitions in simulation is 921541307
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Thu Jan 11 08:04:39 2024
+    Info: Elapsed time: 00:58:51
+    Info: Total CPU time (on all processors): 01:00:22
+
+

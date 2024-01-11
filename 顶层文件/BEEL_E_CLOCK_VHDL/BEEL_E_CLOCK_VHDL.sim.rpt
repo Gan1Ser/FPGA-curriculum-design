@@ -1,0 +1,460 @@
+Simulator report for BEEL_E_CLOCK_VHDL
+Thu Jan 11 01:51:53 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 3800.0 s     ;
+; Simulation Netlist Size     ; 198 nodes    ;
+; Simulation Coverage         ;      65.00 % ;
+; Total Number of Transitions ; 921225534    ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C40Q240C8 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      65.00 % ;
+; Total nodes checked                                 ; 198          ;
+; Total output ports checked                          ; 220          ;
+; Total output ports with complete 1/0-value coverage ; 143          ;
+; Total output ports with no 1/0-value coverage       ; 77           ;
+; Total output ports with no 1-value coverage         ; 77           ;
+; Total output ports with no 0-value coverage         ; 77           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                            ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~0      ; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~0      ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~0      ; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~1      ; cout             ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~2      ; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~2      ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~2      ; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~3      ; cout             ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~4      ; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~4      ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~4      ; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~5      ; cout             ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~6      ; |BEEL_E_CLOCK_VHDL|SECOND:U2|Add0~6      ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[0]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[0]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[1]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[1]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[2]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[2]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[3]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[3]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[4]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[4]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[5]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[5]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[6]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[6]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[7]     ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[7]     ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[4]      ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[4]      ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[0]      ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[0]      ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[1]      ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[1]      ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[2]      ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[2]      ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[3]      ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[3]      ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[0]~9   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[0]~9   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[0]~9   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[0]~10  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[1]~11  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[1]~11  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[1]~11  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[1]~12  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[2]~13  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[2]~13  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[2]~13  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[2]~14  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[3]~15  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[3]~15  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[3]~15  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[3]~16  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[4]~17  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[4]~17  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[4]~17  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[4]~18  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[5]~19  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[5]~19  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[5]~19  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[5]~20  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[6]~21  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[6]~21  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[6]~21  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[6]~22  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[7]~23  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[7]~23  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[7]~23  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[7]~24  ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[8]~25  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[8]~25  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[0]~6    ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[0]~6    ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[0]~6    ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[0]~7    ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[1]~8    ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[1]~8    ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[1]~8    ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[1]~9    ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[2]~10   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[2]~10   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[2]~10   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[2]~11   ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[3]~12   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[3]~12   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[3]~12   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[3]~13   ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[4]~14   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[4]~14   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[4]~14   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[4]~15   ; cout             ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[5]~16   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[5]~16   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[1]    ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[1]    ; q                ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[2]    ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[2]    ; q                ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[0]    ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[0]    ; q                ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~0     ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~1     ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~1     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~2     ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~2     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[2]    ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[2]    ; q                ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[1]    ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[1]    ; q                ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[3]    ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[3]    ; q                ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[0]    ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[0]    ; q                ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~3     ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~3     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[2]        ; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[2]        ; q                ;
+; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[0]        ; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[0]        ; q                ;
+; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[1]        ; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[1]        ; q                ;
+; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~0     ; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~1     ; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~1     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~2     ; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~2     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~3     ; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~3     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~4     ; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~4     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~5     ; |BEEL_E_CLOCK_VHDL|SelTube:U7|Mux0~5     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~0   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~0   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~1   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~1   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~3   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~3   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~0   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~0   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~1   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~1   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~3   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~3   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~0   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~0   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~1   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~1   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~3   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~3   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~0   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~0   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~1   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~1   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~3   ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~3   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux6~0     ; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux6~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux5~0     ; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux5~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux4~0     ; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux4~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux3~0     ; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux3~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux2~0     ; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux2~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux1~0     ; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux1~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux0~0     ; |BEEL_E_CLOCK_VHDL|DECODER:U9|Mux0~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|Q1          ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|Q1          ; q                ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|MM          ; |BEEL_E_CLOCK_VHDL|SECOND:U2|MM          ; q                ;
+; |BEEL_E_CLOCK_VHDL|OR_2:U10|c            ; |BEEL_E_CLOCK_VHDL|OR_2:U10|c            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[0]~0  ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[0]~0  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~0     ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~0     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|process_0~0 ; |BEEL_E_CLOCK_VHDL|SECOND:U2|process_0~0 ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[1]~0  ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[1]~0  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[2]~1  ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[2]~1  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~1     ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~1     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~2     ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~2     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~3     ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1~3     ; combout          ;
+; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt~0         ; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt~0         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X           ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X           ; q                ;
+; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt~1         ; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt~1         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan1~0 ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan1~0 ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan1~1 ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan1~1 ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan1~2 ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan1~2 ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|MM~0        ; |BEEL_E_CLOCK_VHDL|SECOND:U2|MM~0        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|MM~1        ; |BEEL_E_CLOCK_VHDL|SECOND:U2|MM~1        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan0~0 ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan0~0 ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X~0         ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X~0         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan0~1 ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|LessThan0~1 ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[0]~5  ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT1[0]~5  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[0]~2      ; |BEEL_E_CLOCK_VHDL|CNT6:U8|cnt[0]~2      ; combout          ;
+; |BEEL_E_CLOCK_VHDL|r[0]~output           ; |BEEL_E_CLOCK_VHDL|r[0]~output           ; o                ;
+; |BEEL_E_CLOCK_VHDL|r[0]                  ; |BEEL_E_CLOCK_VHDL|r[0]                  ; padout           ;
+; |BEEL_E_CLOCK_VHDL|r[1]~output           ; |BEEL_E_CLOCK_VHDL|r[1]~output           ; o                ;
+; |BEEL_E_CLOCK_VHDL|r[1]                  ; |BEEL_E_CLOCK_VHDL|r[1]                  ; padout           ;
+; |BEEL_E_CLOCK_VHDL|r[2]~output           ; |BEEL_E_CLOCK_VHDL|r[2]~output           ; o                ;
+; |BEEL_E_CLOCK_VHDL|r[2]                  ; |BEEL_E_CLOCK_VHDL|r[2]                  ; padout           ;
+; |BEEL_E_CLOCK_VHDL|r[3]~output           ; |BEEL_E_CLOCK_VHDL|r[3]~output           ; o                ;
+; |BEEL_E_CLOCK_VHDL|r[3]                  ; |BEEL_E_CLOCK_VHDL|r[3]                  ; padout           ;
+; |BEEL_E_CLOCK_VHDL|r[4]~output           ; |BEEL_E_CLOCK_VHDL|r[4]~output           ; o                ;
+; |BEEL_E_CLOCK_VHDL|r[4]                  ; |BEEL_E_CLOCK_VHDL|r[4]                  ; padout           ;
+; |BEEL_E_CLOCK_VHDL|r[5]~output           ; |BEEL_E_CLOCK_VHDL|r[5]~output           ; o                ;
+; |BEEL_E_CLOCK_VHDL|r[5]                  ; |BEEL_E_CLOCK_VHDL|r[5]                  ; padout           ;
+; |BEEL_E_CLOCK_VHDL|qout[0]~output        ; |BEEL_E_CLOCK_VHDL|qout[0]~output        ; o                ;
+; |BEEL_E_CLOCK_VHDL|qout[0]               ; |BEEL_E_CLOCK_VHDL|qout[0]               ; padout           ;
+; |BEEL_E_CLOCK_VHDL|qout[1]~output        ; |BEEL_E_CLOCK_VHDL|qout[1]~output        ; o                ;
+; |BEEL_E_CLOCK_VHDL|qout[1]               ; |BEEL_E_CLOCK_VHDL|qout[1]               ; padout           ;
+; |BEEL_E_CLOCK_VHDL|qout[2]~output        ; |BEEL_E_CLOCK_VHDL|qout[2]~output        ; o                ;
+; |BEEL_E_CLOCK_VHDL|qout[2]               ; |BEEL_E_CLOCK_VHDL|qout[2]               ; padout           ;
+; |BEEL_E_CLOCK_VHDL|qout[3]~output        ; |BEEL_E_CLOCK_VHDL|qout[3]~output        ; o                ;
+; |BEEL_E_CLOCK_VHDL|qout[3]               ; |BEEL_E_CLOCK_VHDL|qout[3]               ; padout           ;
+; |BEEL_E_CLOCK_VHDL|qout[4]~output        ; |BEEL_E_CLOCK_VHDL|qout[4]~output        ; o                ;
+; |BEEL_E_CLOCK_VHDL|qout[4]               ; |BEEL_E_CLOCK_VHDL|qout[4]               ; padout           ;
+; |BEEL_E_CLOCK_VHDL|qout[5]~output        ; |BEEL_E_CLOCK_VHDL|qout[5]~output        ; o                ;
+; |BEEL_E_CLOCK_VHDL|qout[5]               ; |BEEL_E_CLOCK_VHDL|qout[5]               ; padout           ;
+; |BEEL_E_CLOCK_VHDL|qout[6]~output        ; |BEEL_E_CLOCK_VHDL|qout[6]~output        ; o                ;
+; |BEEL_E_CLOCK_VHDL|qout[6]               ; |BEEL_E_CLOCK_VHDL|qout[6]               ; padout           ;
+; |BEEL_E_CLOCK_VHDL|CLK~input             ; |BEEL_E_CLOCK_VHDL|CLK~input             ; o                ;
+; |BEEL_E_CLOCK_VHDL|CLK                   ; |BEEL_E_CLOCK_VHDL|CLK                   ; padout           ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X~clkctrl   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X~clkctrl   ; outclk           ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|Q1~clkctrl  ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|Q1~clkctrl  ; outclk           ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|Q1~feeder   ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|Q1~feeder   ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X~feeder    ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|X~feeder    ; combout          ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                             ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                       ; Output Port Name                                ; Output Port Type ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~0               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~0               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~0               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~1               ; cout             ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~2               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~2               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~2               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~3               ; cout             ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~4               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~4               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~4               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~5               ; cout             ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~6               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~6               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~0             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~0             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~0             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~1             ; cout             ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~2             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~2             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~2             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~3             ; cout             ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~4             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~4             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~4             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~5             ; cout             ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~6             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~6             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[8]            ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[8]            ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[5]             ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[5]             ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[3]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[3]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[0]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[0]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[2]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[2]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[3]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[3]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~0          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~0          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[2]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[2]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[1]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[1]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[3]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[3]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~0        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~0        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[3]           ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[3]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[0]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[0]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[3]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[3]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped        ; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped        ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[2]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[2]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[1]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[1]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[1]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[1]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[0]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[0]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~4            ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~4            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~5            ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~5            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~6            ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~6            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|LessThan0~0          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|LessThan0~0          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~0               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~0               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~1               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~1               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~1          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~1          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~0           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~0           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~0            ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~0            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~1            ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~1            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Equal2~0           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Equal2~0           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~1        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~1        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~2        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~2        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~3        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~3        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]~1         ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]~1         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~2            ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~2            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]~2         ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]~2         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~1           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~1           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI~0          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI~0          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~2           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~2           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~3           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~3           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|CC                 ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|CC                 ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK                  ; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK                  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~4        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~4        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]~4         ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]~4         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|qw~output                    ; |BEEL_E_CLOCK_VHDL|qw~output                    ; o                ;
+; |BEEL_E_CLOCK_VHDL|qw                           ; |BEEL_E_CLOCK_VHDL|qw                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|SB~input                     ; |BEEL_E_CLOCK_VHDL|SB~input                     ; o                ;
+; |BEEL_E_CLOCK_VHDL|SB                           ; |BEEL_E_CLOCK_VHDL|SB                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|SC~input                     ; |BEEL_E_CLOCK_VHDL|SC~input                     ; o                ;
+; |BEEL_E_CLOCK_VHDL|SC                           ; |BEEL_E_CLOCK_VHDL|SC                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|INTERRUPT~input              ; |BEEL_E_CLOCK_VHDL|INTERRUPT~input              ; o                ;
+; |BEEL_E_CLOCK_VHDL|INTERRUPT                    ; |BEEL_E_CLOCK_VHDL|INTERRUPT                    ; padout           ;
+; |BEEL_E_CLOCK_VHDL|SA~input                     ; |BEEL_E_CLOCK_VHDL|SA~input                     ; o                ;
+; |BEEL_E_CLOCK_VHDL|SA                           ; |BEEL_E_CLOCK_VHDL|SA                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK~clkctrl          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK~clkctrl          ; outclk           ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped~feeder ; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped~feeder ; combout          ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                             ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                       ; Output Port Name                                ; Output Port Type ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~0               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~0               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~0               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~1               ; cout             ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~2               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~2               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~2               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~3               ; cout             ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~4               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~4               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~4               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~5               ; cout             ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~6               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add1~6               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~0             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~0             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~0             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~1             ; cout             ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~2             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~2             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~2             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~3             ; cout             ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~4             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~4             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~4             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~5             ; cout             ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~6             ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Add0~6             ; combout          ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[8]            ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT2[8]            ; q                ;
+; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[5]             ; |BEEL_E_CLOCK_VHDL|FENPIN:U1|CNT[5]             ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[3]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[3]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[0]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[0]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[2]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[2]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[3]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[3]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~0          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~0          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[2]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[2]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[1]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[1]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[3]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[3]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~0        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~0        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[3]           ; |BEEL_E_CLOCK_VHDL|SECOND:U2|COUT2[3]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[0]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[0]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[3]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[3]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]           ; q                ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped        ; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped        ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[2]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[2]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[1]         ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI[1]         ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[1]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[1]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[0]          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE[0]          ; q                ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~4            ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~4            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~5            ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~5            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~6            ; |BEEL_E_CLOCK_VHDL|bell:U5|speaker~6            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux3~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux2~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux1~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~2          ; |BEEL_E_CLOCK_VHDL|SelNumber:U6|Mux0~2          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|LessThan0~0          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|LessThan0~0          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~0               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~0               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~1               ; |BEEL_E_CLOCK_VHDL|HOUR:U4|Add0~1               ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~1          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|process_0~1          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~0           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~0           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~0            ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~0            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~1            ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~1            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Equal2~0           ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|Equal2~0           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~1        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~1        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~2        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~2        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~3        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~3        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]~1         ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[1]~1         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~2            ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1~2            ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]~2         ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT2[2]~2         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~1           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~1           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI~0          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_SHI~0          ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~2           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~2           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~3           ; |BEEL_E_CLOCK_VHDL|HOUR:U4|COUNT_GE~3           ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|CC                 ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|CC                 ; q                ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK                  ; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK                  ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~4        ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|process_0~4        ; combout          ;
+; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]~4         ; |BEEL_E_CLOCK_VHDL|MINUTE:U3|COUT1[0]~4         ; combout          ;
+; |BEEL_E_CLOCK_VHDL|qw~output                    ; |BEEL_E_CLOCK_VHDL|qw~output                    ; o                ;
+; |BEEL_E_CLOCK_VHDL|qw                           ; |BEEL_E_CLOCK_VHDL|qw                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|SB~input                     ; |BEEL_E_CLOCK_VHDL|SB~input                     ; o                ;
+; |BEEL_E_CLOCK_VHDL|SB                           ; |BEEL_E_CLOCK_VHDL|SB                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|SC~input                     ; |BEEL_E_CLOCK_VHDL|SC~input                     ; o                ;
+; |BEEL_E_CLOCK_VHDL|SC                           ; |BEEL_E_CLOCK_VHDL|SC                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|INTERRUPT~input              ; |BEEL_E_CLOCK_VHDL|INTERRUPT~input              ; o                ;
+; |BEEL_E_CLOCK_VHDL|INTERRUPT                    ; |BEEL_E_CLOCK_VHDL|INTERRUPT                    ; padout           ;
+; |BEEL_E_CLOCK_VHDL|SA~input                     ; |BEEL_E_CLOCK_VHDL|SA~input                     ; o                ;
+; |BEEL_E_CLOCK_VHDL|SA                           ; |BEEL_E_CLOCK_VHDL|SA                           ; padout           ;
+; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK~clkctrl          ; |BEEL_E_CLOCK_VHDL|HOUR:U4|CLK~clkctrl          ; outclk           ;
+; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped~feeder ; |BEEL_E_CLOCK_VHDL|bell:U5|alarm_stopped~feeder ; combout          ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Jan 11 00:47:57 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off BEEL_E_CLOCK_VHDL -c BEEL_E_CLOCK_VHDL
+Info: Using vector source file "C:/Users/GanSer/Desktop/BEEL_E_CLOCK_VHDL/BEEL_E_CLOCK_VHDL.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 9 sub-simulations
+Info: Simulation coverage is      65.00 %
+Info: Number of transitions in simulation is 921225534
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Thu Jan 11 01:51:53 2024
+    Info: Elapsed time: 01:03:56
+    Info: Total CPU time (on all processors): 01:05:21
+
+

@@ -1,0 +1,17 @@
+Fitter Status : Successful - Tue Jan 02 16:05:45 2024
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : HOUR
+Top-level Entity Name : HOUR
+Family : Stratix II
+Device : EP2S15F484C3
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 13 / 12,480 ( < 1 % )
+    Dedicated logic registers : 10 / 12,480 ( < 1 % )
+Total registers : 10
+Total pins : 10 / 343 ( 3 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 419,328 ( 0 % )
+DSP block 9-bit elements : 0 / 96 ( 0 % )
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )

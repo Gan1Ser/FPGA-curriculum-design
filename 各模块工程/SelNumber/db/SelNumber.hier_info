@@ -1,0 +1,43 @@
+|SelNumber
+n1[0] => Mux3.IN2
+n1[1] => Mux2.IN2
+n1[2] => Mux1.IN2
+n1[3] => Mux0.IN2
+n2[0] => Mux3.IN3
+n2[1] => Mux2.IN3
+n2[2] => Mux1.IN3
+n2[3] => Mux0.IN3
+n3[0] => Mux3.IN4
+n3[1] => Mux2.IN4
+n3[2] => Mux1.IN4
+n3[3] => Mux0.IN4
+n4[0] => Mux3.IN5
+n4[1] => Mux2.IN5
+n4[2] => Mux1.IN5
+n4[3] => Mux0.IN5
+n5[0] => Mux3.IN6
+n5[1] => Mux2.IN6
+n5[2] => Mux1.IN6
+n5[3] => Mux0.IN6
+n6[0] => Mux3.IN7
+n6[1] => Mux2.IN7
+n6[2] => Mux1.IN7
+n6[3] => Mux0.IN7
+a[0] => Mux0.IN10
+a[0] => Mux1.IN10
+a[0] => Mux2.IN10
+a[0] => Mux3.IN10
+a[1] => Mux0.IN9
+a[1] => Mux1.IN9
+a[1] => Mux2.IN9
+a[1] => Mux3.IN9
+a[2] => Mux0.IN8
+a[2] => Mux1.IN8
+a[2] => Mux2.IN8
+a[2] => Mux3.IN8
+qqq[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+qqq[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+qqq[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+qqq[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

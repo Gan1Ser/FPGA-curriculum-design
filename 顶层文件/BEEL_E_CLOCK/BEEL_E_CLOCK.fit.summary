@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jan 10 23:28:38 2024
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : BEEL_E_CLOCK
+Top-level Entity Name : BEEL_E_CLOCK
+Family : Cyclone III
+Device : EP3C40Q240C8
+Timing Models : Final
+Total logic elements : 111 / 39,600 ( < 1 % )
+    Total combinational functions : 109 / 39,600 ( < 1 % )
+    Dedicated logic registers : 47 / 39,600 ( < 1 % )
+Total registers : 47
+Total pins : 20 / 129 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,161,216 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 252 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

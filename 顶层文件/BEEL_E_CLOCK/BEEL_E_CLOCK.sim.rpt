@@ -1,0 +1,464 @@
+Simulator report for BEEL_E_CLOCK
+Thu Jan 11 00:41:12 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 3800.0 s     ;
+; Simulation Netlist Size     ; 201 nodes    ;
+; Simulation Coverage         ;      65.02 % ;
+; Total Number of Transitions ; 898795717    ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C40Q240C8 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      65.02 % ;
+; Total nodes checked                                 ; 201          ;
+; Total output ports checked                          ; 223          ;
+; Total output ports with complete 1/0-value coverage ; 145          ;
+; Total output ports with no 1/0-value coverage       ; 78           ;
+; Total output ports with no 1-value coverage         ; 78           ;
+; Total output ports with no 0-value coverage         ; 78           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |BEEL_E_CLOCK|SECOND:inst16|Add0~0      ; |BEEL_E_CLOCK|SECOND:inst16|Add0~0      ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|Add0~0      ; |BEEL_E_CLOCK|SECOND:inst16|Add0~1      ; cout             ;
+; |BEEL_E_CLOCK|SECOND:inst16|Add0~2      ; |BEEL_E_CLOCK|SECOND:inst16|Add0~2      ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|Add0~2      ; |BEEL_E_CLOCK|SECOND:inst16|Add0~3      ; cout             ;
+; |BEEL_E_CLOCK|SECOND:inst16|Add0~4      ; |BEEL_E_CLOCK|SECOND:inst16|Add0~4      ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|Add0~4      ; |BEEL_E_CLOCK|SECOND:inst16|Add0~5      ; cout             ;
+; |BEEL_E_CLOCK|SECOND:inst16|Add0~6      ; |BEEL_E_CLOCK|SECOND:inst16|Add0~6      ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[0]      ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[0]      ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[1]      ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[1]      ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[2]      ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[2]      ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[3]      ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[3]      ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[4]      ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[4]      ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[5]      ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[5]      ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[0]     ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[0]     ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[1]     ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[1]     ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[2]     ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[2]     ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[3]     ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[3]     ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[4]     ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[4]     ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[5]     ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[5]     ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[6]     ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[6]     ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[0]~7    ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[0]~7    ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[0]~7    ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[0]~8    ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[1]~9    ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[1]~9    ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[1]~9    ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[1]~10   ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[2]~11   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[2]~11   ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[2]~11   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[2]~12   ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[3]~13   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[3]~13   ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[3]~13   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[3]~14   ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[4]~15   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[4]~15   ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[4]~15   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[4]~16   ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[5]~17   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[5]~17   ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[5]~17   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[5]~18   ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[6]~19   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[6]~19   ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[0]~8   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[0]~8   ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[0]~8   ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[0]~9   ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[1]~10  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[1]~10  ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[1]~10  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[1]~11  ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[2]~12  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[2]~12  ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[2]~12  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[2]~13  ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[3]~14  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[3]~14  ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[3]~14  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[3]~15  ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[4]~16  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[4]~16  ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[4]~16  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[4]~17  ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[5]~18  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[5]~18  ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[5]~18  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[5]~19  ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[6]~20  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[6]~20  ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[6]~20  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[6]~21  ; cout             ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[7]~22  ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[7]~22  ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT2[1]    ; |BEEL_E_CLOCK|SECOND:inst16|COUT2[1]    ; q                ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT2[2]    ; |BEEL_E_CLOCK|SECOND:inst16|COUT2[2]    ; q                ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT2[0]    ; |BEEL_E_CLOCK|SECOND:inst16|COUT2[0]    ; q                ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~2      ; |BEEL_E_CLOCK|bell:inst8|speaker~2      ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~3      ; |BEEL_E_CLOCK|bell:inst8|speaker~3      ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1[2]    ; |BEEL_E_CLOCK|SECOND:inst16|COUT1[2]    ; q                ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1[1]    ; |BEEL_E_CLOCK|SECOND:inst16|COUT1[1]    ; q                ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1[3]    ; |BEEL_E_CLOCK|SECOND:inst16|COUT1[3]    ; q                ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1[0]    ; |BEEL_E_CLOCK|SECOND:inst16|COUT1[0]    ; q                ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~5      ; |BEEL_E_CLOCK|bell:inst8|speaker~5      ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|X           ; |BEEL_E_CLOCK|FENPIN:inst11|X           ; q                ;
+; |BEEL_E_CLOCK|CNT6:inst9|cnt[2]         ; |BEEL_E_CLOCK|CNT6:inst9|cnt[2]         ; q                ;
+; |BEEL_E_CLOCK|CNT6:inst9|cnt[0]         ; |BEEL_E_CLOCK|CNT6:inst9|cnt[0]         ; q                ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~0   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~0   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~1   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~1   ; combout          ;
+; |BEEL_E_CLOCK|CNT6:inst9|cnt[1]         ; |BEEL_E_CLOCK|CNT6:inst9|cnt[1]         ; q                ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~3   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~3   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~0   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~0   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~1   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~1   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~3   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~3   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~0   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~0   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~1   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~1   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~3   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~3   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~0   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~0   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~1   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~1   ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~3   ; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~3   ; combout          ;
+; |BEEL_E_CLOCK|DECODER:inst10|Mux0~0     ; |BEEL_E_CLOCK|DECODER:inst10|Mux0~0     ; combout          ;
+; |BEEL_E_CLOCK|DECODER:inst10|Mux1~0     ; |BEEL_E_CLOCK|DECODER:inst10|Mux1~0     ; combout          ;
+; |BEEL_E_CLOCK|DECODER:inst10|Mux2~0     ; |BEEL_E_CLOCK|DECODER:inst10|Mux2~0     ; combout          ;
+; |BEEL_E_CLOCK|DECODER:inst10|Mux3~0     ; |BEEL_E_CLOCK|DECODER:inst10|Mux3~0     ; combout          ;
+; |BEEL_E_CLOCK|DECODER:inst10|Mux4~0     ; |BEEL_E_CLOCK|DECODER:inst10|Mux4~0     ; combout          ;
+; |BEEL_E_CLOCK|DECODER:inst10|Mux5~0     ; |BEEL_E_CLOCK|DECODER:inst10|Mux5~0     ; combout          ;
+; |BEEL_E_CLOCK|DECODER:inst10|Mux6~0     ; |BEEL_E_CLOCK|DECODER:inst10|Mux6~0     ; combout          ;
+; |BEEL_E_CLOCK|SelTube:inst18|Mux0~0     ; |BEEL_E_CLOCK|SelTube:inst18|Mux0~0     ; combout          ;
+; |BEEL_E_CLOCK|SelTube:inst18|Mux0~1     ; |BEEL_E_CLOCK|SelTube:inst18|Mux0~1     ; combout          ;
+; |BEEL_E_CLOCK|SelTube:inst18|Mux0~2     ; |BEEL_E_CLOCK|SelTube:inst18|Mux0~2     ; combout          ;
+; |BEEL_E_CLOCK|SelTube:inst18|Mux0~3     ; |BEEL_E_CLOCK|SelTube:inst18|Mux0~3     ; combout          ;
+; |BEEL_E_CLOCK|SelTube:inst18|Mux0~4     ; |BEEL_E_CLOCK|SelTube:inst18|Mux0~4     ; combout          ;
+; |BEEL_E_CLOCK|SelTube:inst18|Mux0~5     ; |BEEL_E_CLOCK|SelTube:inst18|Mux0~5     ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|Q1          ; |BEEL_E_CLOCK|FENPIN:inst11|Q1          ; q                ;
+; |BEEL_E_CLOCK|SECOND:inst16|MM          ; |BEEL_E_CLOCK|SECOND:inst16|MM          ; q                ;
+; |BEEL_E_CLOCK|OR_2:inst15|c             ; |BEEL_E_CLOCK|OR_2:inst15|c             ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[0]~0  ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[0]~0  ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]~1  ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]~1  ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1~0     ; |BEEL_E_CLOCK|SECOND:inst16|COUT1~0     ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|process_0~0 ; |BEEL_E_CLOCK|SECOND:inst16|process_0~0 ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT2[1]~0  ; |BEEL_E_CLOCK|SECOND:inst16|COUT2[1]~0  ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT2[2]~1  ; |BEEL_E_CLOCK|SECOND:inst16|COUT2[2]~1  ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1~1     ; |BEEL_E_CLOCK|SECOND:inst16|COUT1~1     ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1~2     ; |BEEL_E_CLOCK|SECOND:inst16|COUT1~2     ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1~3     ; |BEEL_E_CLOCK|SECOND:inst16|COUT1~3     ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|LessThan0~0 ; |BEEL_E_CLOCK|FENPIN:inst11|LessThan0~0 ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|LessThan0~1 ; |BEEL_E_CLOCK|FENPIN:inst11|LessThan0~1 ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|X~0         ; |BEEL_E_CLOCK|FENPIN:inst11|X~0         ; combout          ;
+; |BEEL_E_CLOCK|CNT6:inst9|cnt~0          ; |BEEL_E_CLOCK|CNT6:inst9|cnt~0          ; combout          ;
+; |BEEL_E_CLOCK|CNT6:inst9|cnt~1          ; |BEEL_E_CLOCK|CNT6:inst9|cnt~1          ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|LessThan1~0 ; |BEEL_E_CLOCK|FENPIN:inst11|LessThan1~0 ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|LessThan1~1 ; |BEEL_E_CLOCK|FENPIN:inst11|LessThan1~1 ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|LessThan1~2 ; |BEEL_E_CLOCK|FENPIN:inst11|LessThan1~2 ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|MM~0        ; |BEEL_E_CLOCK|SECOND:inst16|MM~0        ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|MM~1        ; |BEEL_E_CLOCK|SECOND:inst16|MM~1        ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT1[0]~5  ; |BEEL_E_CLOCK|SECOND:inst16|COUT1[0]~5  ; combout          ;
+; |BEEL_E_CLOCK|CNT6:inst9|cnt[0]~2       ; |BEEL_E_CLOCK|CNT6:inst9|cnt[0]~2       ; combout          ;
+; |BEEL_E_CLOCK|Q1000~output              ; |BEEL_E_CLOCK|Q1000~output              ; o                ;
+; |BEEL_E_CLOCK|Q1000                     ; |BEEL_E_CLOCK|Q1000                     ; padout           ;
+; |BEEL_E_CLOCK|qout[6]~output            ; |BEEL_E_CLOCK|qout[6]~output            ; o                ;
+; |BEEL_E_CLOCK|qout[6]                   ; |BEEL_E_CLOCK|qout[6]                   ; padout           ;
+; |BEEL_E_CLOCK|qout[5]~output            ; |BEEL_E_CLOCK|qout[5]~output            ; o                ;
+; |BEEL_E_CLOCK|qout[5]                   ; |BEEL_E_CLOCK|qout[5]                   ; padout           ;
+; |BEEL_E_CLOCK|qout[4]~output            ; |BEEL_E_CLOCK|qout[4]~output            ; o                ;
+; |BEEL_E_CLOCK|qout[4]                   ; |BEEL_E_CLOCK|qout[4]                   ; padout           ;
+; |BEEL_E_CLOCK|qout[3]~output            ; |BEEL_E_CLOCK|qout[3]~output            ; o                ;
+; |BEEL_E_CLOCK|qout[3]                   ; |BEEL_E_CLOCK|qout[3]                   ; padout           ;
+; |BEEL_E_CLOCK|qout[2]~output            ; |BEEL_E_CLOCK|qout[2]~output            ; o                ;
+; |BEEL_E_CLOCK|qout[2]                   ; |BEEL_E_CLOCK|qout[2]                   ; padout           ;
+; |BEEL_E_CLOCK|qout[1]~output            ; |BEEL_E_CLOCK|qout[1]~output            ; o                ;
+; |BEEL_E_CLOCK|qout[1]                   ; |BEEL_E_CLOCK|qout[1]                   ; padout           ;
+; |BEEL_E_CLOCK|qout[0]~output            ; |BEEL_E_CLOCK|qout[0]~output            ; o                ;
+; |BEEL_E_CLOCK|qout[0]                   ; |BEEL_E_CLOCK|qout[0]                   ; padout           ;
+; |BEEL_E_CLOCK|r[5]~output               ; |BEEL_E_CLOCK|r[5]~output               ; o                ;
+; |BEEL_E_CLOCK|r[5]                      ; |BEEL_E_CLOCK|r[5]                      ; padout           ;
+; |BEEL_E_CLOCK|r[4]~output               ; |BEEL_E_CLOCK|r[4]~output               ; o                ;
+; |BEEL_E_CLOCK|r[4]                      ; |BEEL_E_CLOCK|r[4]                      ; padout           ;
+; |BEEL_E_CLOCK|r[3]~output               ; |BEEL_E_CLOCK|r[3]~output               ; o                ;
+; |BEEL_E_CLOCK|r[3]                      ; |BEEL_E_CLOCK|r[3]                      ; padout           ;
+; |BEEL_E_CLOCK|r[2]~output               ; |BEEL_E_CLOCK|r[2]~output               ; o                ;
+; |BEEL_E_CLOCK|r[2]                      ; |BEEL_E_CLOCK|r[2]                      ; padout           ;
+; |BEEL_E_CLOCK|r[1]~output               ; |BEEL_E_CLOCK|r[1]~output               ; o                ;
+; |BEEL_E_CLOCK|r[1]                      ; |BEEL_E_CLOCK|r[1]                      ; padout           ;
+; |BEEL_E_CLOCK|r[0]~output               ; |BEEL_E_CLOCK|r[0]~output               ; o                ;
+; |BEEL_E_CLOCK|r[0]                      ; |BEEL_E_CLOCK|r[0]                      ; padout           ;
+; |BEEL_E_CLOCK|CLK~input                 ; |BEEL_E_CLOCK|CLK~input                 ; o                ;
+; |BEEL_E_CLOCK|CLK                       ; |BEEL_E_CLOCK|CLK                       ; padout           ;
+; |BEEL_E_CLOCK|FENPIN:inst11|X~clkctrl   ; |BEEL_E_CLOCK|FENPIN:inst11|X~clkctrl   ; outclk           ;
+; |BEEL_E_CLOCK|FENPIN:inst11|Q1~clkctrl  ; |BEEL_E_CLOCK|FENPIN:inst11|Q1~clkctrl  ; outclk           ;
+; |BEEL_E_CLOCK|FENPIN:inst11|X~feeder    ; |BEEL_E_CLOCK|FENPIN:inst11|X~feeder    ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|Q1~feeder   ; |BEEL_E_CLOCK|FENPIN:inst11|Q1~feeder   ; combout          ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~0            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~0            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~0            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~1            ; cout             ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~2            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~2            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~2            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~3            ; cout             ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~4            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~4            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~4            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~5            ; cout             ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~6            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~6            ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~0              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~0              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~0              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~1              ; cout             ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~2              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~2              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~2              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~3              ; cout             ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~4              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~4              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~4              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~5              ; cout             ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~6              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~6              ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[6]            ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[6]            ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[7]           ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[7]           ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[2]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[2]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[1]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[1]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[3]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[3]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~0       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~0       ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT2[3]          ; |BEEL_E_CLOCK|SECOND:inst16|COUT2[3]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[0]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[0]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[3]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[3]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]          ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[1]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[1]         ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[0]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[0]         ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add0~0              ; |BEEL_E_CLOCK|HOUR:inst12|Add0~0              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[3]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[3]         ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[0]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[0]        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[2]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[2]        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[3]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[3]        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|process_0~0         ; |BEEL_E_CLOCK|HOUR:inst12|process_0~0         ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[2]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[2]         ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]          ; q                ;
+; |BEEL_E_CLOCK|bell:inst8|alarm_stopped        ; |BEEL_E_CLOCK|bell:inst8|alarm_stopped        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[1]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[1]        ; q                ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~4            ; |BEEL_E_CLOCK|bell:inst8|speaker~4            ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~6            ; |BEEL_E_CLOCK|bell:inst8|speaker~6            ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~7            ; |BEEL_E_CLOCK|bell:inst8|speaker~7            ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~8            ; |BEEL_E_CLOCK|bell:inst8|speaker~8            ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~2         ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~2         ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~2         ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~2         ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~0           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~0           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~1           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~1           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~2           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~2           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~1       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~1       ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~2       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~2       ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]~2        ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]~2        ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~3           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~3           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]~3        ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]~3        ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|LessThan0~0         ; |BEEL_E_CLOCK|HOUR:inst12|LessThan0~0         ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|process_0~1         ; |BEEL_E_CLOCK|HOUR:inst12|process_0~1         ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~0          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~0          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~1          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~1          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add0~1              ; |BEEL_E_CLOCK|HOUR:inst12|Add0~1              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~2          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~2          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~3          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~3          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI~0         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI~0         ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|CC                ; |BEEL_E_CLOCK|MINUTE:inst13|CC                ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|CLK                 ; |BEEL_E_CLOCK|HOUR:inst12|CLK                 ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~3       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~3       ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~9            ; |BEEL_E_CLOCK|bell:inst8|speaker~9            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]~5        ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]~5        ; combout          ;
+; |BEEL_E_CLOCK|qw~output                       ; |BEEL_E_CLOCK|qw~output                       ; o                ;
+; |BEEL_E_CLOCK|qw                              ; |BEEL_E_CLOCK|qw                              ; padout           ;
+; |BEEL_E_CLOCK|SB~input                        ; |BEEL_E_CLOCK|SB~input                        ; o                ;
+; |BEEL_E_CLOCK|SB                              ; |BEEL_E_CLOCK|SB                              ; padout           ;
+; |BEEL_E_CLOCK|SC~input                        ; |BEEL_E_CLOCK|SC~input                        ; o                ;
+; |BEEL_E_CLOCK|SC                              ; |BEEL_E_CLOCK|SC                              ; padout           ;
+; |BEEL_E_CLOCK|ALARM_OFF~input                 ; |BEEL_E_CLOCK|ALARM_OFF~input                 ; o                ;
+; |BEEL_E_CLOCK|ALARM_OFF                       ; |BEEL_E_CLOCK|ALARM_OFF                       ; padout           ;
+; |BEEL_E_CLOCK|SA~input                        ; |BEEL_E_CLOCK|SA~input                        ; o                ;
+; |BEEL_E_CLOCK|SA                              ; |BEEL_E_CLOCK|SA                              ; padout           ;
+; |BEEL_E_CLOCK|HOUR:inst12|CLK~clkctrl         ; |BEEL_E_CLOCK|HOUR:inst12|CLK~clkctrl         ; outclk           ;
+; |BEEL_E_CLOCK|bell:inst8|alarm_stopped~feeder ; |BEEL_E_CLOCK|bell:inst8|alarm_stopped~feeder ; combout          ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~0            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~0            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~0            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~1            ; cout             ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~2            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~2            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~2            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~3            ; cout             ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~4            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~4            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~4            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~5            ; cout             ;
+; |BEEL_E_CLOCK|MINUTE:inst13|Add0~6            ; |BEEL_E_CLOCK|MINUTE:inst13|Add0~6            ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~0              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~0              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~0              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~1              ; cout             ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~2              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~2              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~2              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~3              ; cout             ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~4              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~4              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~4              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~5              ; cout             ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add1~6              ; |BEEL_E_CLOCK|HOUR:inst12|Add1~6              ; combout          ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT[6]            ; |BEEL_E_CLOCK|FENPIN:inst11|CNT[6]            ; q                ;
+; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[7]           ; |BEEL_E_CLOCK|FENPIN:inst11|CNT2[7]           ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[2]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[2]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[1]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[1]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[3]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[3]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~0       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~0       ; combout          ;
+; |BEEL_E_CLOCK|SECOND:inst16|COUT2[3]          ; |BEEL_E_CLOCK|SECOND:inst16|COUT2[3]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[0]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[0]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[3]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[3]          ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]          ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[1]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[1]         ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[0]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[0]         ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add0~0              ; |BEEL_E_CLOCK|HOUR:inst12|Add0~0              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[3]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[3]         ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[0]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[0]        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[2]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[2]        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[3]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[3]        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|process_0~0         ; |BEEL_E_CLOCK|HOUR:inst12|process_0~0         ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[2]         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE[2]         ; q                ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]          ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]          ; q                ;
+; |BEEL_E_CLOCK|bell:inst8|alarm_stopped        ; |BEEL_E_CLOCK|bell:inst8|alarm_stopped        ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[1]        ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI[1]        ; q                ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~4            ; |BEEL_E_CLOCK|bell:inst8|speaker~4            ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~6            ; |BEEL_E_CLOCK|bell:inst8|speaker~6            ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~7            ; |BEEL_E_CLOCK|bell:inst8|speaker~7            ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~8            ; |BEEL_E_CLOCK|bell:inst8|speaker~8            ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux3~2         ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux2~2         ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux1~2         ; combout          ;
+; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~2         ; |BEEL_E_CLOCK|SelNumber:inst17|Mux0~2         ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~0           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~0           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~1           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~1           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~2           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~2           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~1       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~1       ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~2       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~2       ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]~2        ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[1]~2        ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~3           ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1~3           ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]~3        ; |BEEL_E_CLOCK|MINUTE:inst13|COUT2[2]~3        ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|LessThan0~0         ; |BEEL_E_CLOCK|HOUR:inst12|LessThan0~0         ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|process_0~1         ; |BEEL_E_CLOCK|HOUR:inst12|process_0~1         ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~0          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~0          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~1          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~1          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|Add0~1              ; |BEEL_E_CLOCK|HOUR:inst12|Add0~1              ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~2          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~2          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~3          ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_GE~3          ; combout          ;
+; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI~0         ; |BEEL_E_CLOCK|HOUR:inst12|COUNT_SHI~0         ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|CC                ; |BEEL_E_CLOCK|MINUTE:inst13|CC                ; q                ;
+; |BEEL_E_CLOCK|HOUR:inst12|CLK                 ; |BEEL_E_CLOCK|HOUR:inst12|CLK                 ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|process_0~3       ; |BEEL_E_CLOCK|MINUTE:inst13|process_0~3       ; combout          ;
+; |BEEL_E_CLOCK|bell:inst8|speaker~9            ; |BEEL_E_CLOCK|bell:inst8|speaker~9            ; combout          ;
+; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]~5        ; |BEEL_E_CLOCK|MINUTE:inst13|COUT1[0]~5        ; combout          ;
+; |BEEL_E_CLOCK|qw~output                       ; |BEEL_E_CLOCK|qw~output                       ; o                ;
+; |BEEL_E_CLOCK|qw                              ; |BEEL_E_CLOCK|qw                              ; padout           ;
+; |BEEL_E_CLOCK|SB~input                        ; |BEEL_E_CLOCK|SB~input                        ; o                ;
+; |BEEL_E_CLOCK|SB                              ; |BEEL_E_CLOCK|SB                              ; padout           ;
+; |BEEL_E_CLOCK|SC~input                        ; |BEEL_E_CLOCK|SC~input                        ; o                ;
+; |BEEL_E_CLOCK|SC                              ; |BEEL_E_CLOCK|SC                              ; padout           ;
+; |BEEL_E_CLOCK|ALARM_OFF~input                 ; |BEEL_E_CLOCK|ALARM_OFF~input                 ; o                ;
+; |BEEL_E_CLOCK|ALARM_OFF                       ; |BEEL_E_CLOCK|ALARM_OFF                       ; padout           ;
+; |BEEL_E_CLOCK|SA~input                        ; |BEEL_E_CLOCK|SA~input                        ; o                ;
+; |BEEL_E_CLOCK|SA                              ; |BEEL_E_CLOCK|SA                              ; padout           ;
+; |BEEL_E_CLOCK|HOUR:inst12|CLK~clkctrl         ; |BEEL_E_CLOCK|HOUR:inst12|CLK~clkctrl         ; outclk           ;
+; |BEEL_E_CLOCK|bell:inst8|alarm_stopped~feeder ; |BEEL_E_CLOCK|bell:inst8|alarm_stopped~feeder ; combout          ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Jan 10 23:28:50 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off BEEL_E_CLOCK -c BEEL_E_CLOCK
+Info: Using vector source file "C:/Users/GanSer/Desktop/BEEL_E_CLOCK/BEEL_E_CLOCK.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 9 sub-simulations
+Info: Simulation coverage is      65.02 %
+Info: Number of transitions in simulation is 898795717
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Thu Jan 11 00:41:12 2024
+    Info: Elapsed time: 01:12:22
+    Info: Total CPU time (on all processors): 01:13:57
+
+

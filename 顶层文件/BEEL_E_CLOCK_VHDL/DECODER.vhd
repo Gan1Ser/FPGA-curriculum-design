@@ -1,0 +1,28 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY DECODER IS
+	PORT(a: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		 hex: OUT STD_LOGIC_VECTOR(6 DOWNTO 0));
+END DECODER;
+
+ARCHITECTURE HH OF DECODER IS
+BEGIN
+	PROCESS(a)
+		BEGIN
+			CASE a IS
+				WHEN "0000"=>hex<="1111110"; -- 0 => 7E
+				WHEN "0001"=>hex<="0110000"; -- 1 => 30
+				WHEN "0010"=>hex<="1101101"; -- 2 => 6D
+				WHEN "0011"=>hex<="1111001"; -- 3 => 79
+				WHEN "0100"=>hex<="0110011"; -- 4 => 33
+				WHEN "0101"=>hex<="1011011"; -- 5 => 5B
+				WHEN "0110"=>hex<="1011111"; -- 6 => 5F
+				WHEN "0111"=>hex<="1110000"; -- 7 => 70
+				WHEN "1000"=>hex<="1111111"; -- 8 => 7F
+				WHEN "1001"=>hex<="1111011"; -- 9 => 7B
+				WHEN others=>hex<="0000000";
+			END CASE;
+	END PROCESS;
+END HH;

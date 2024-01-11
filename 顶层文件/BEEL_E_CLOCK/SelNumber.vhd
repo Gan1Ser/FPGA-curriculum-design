@@ -1,0 +1,21 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY SelNumber IS
+	PORT (n1, n2, n3, n4, n5, n6: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+								a: IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+								qqq: OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+END SelNumber;
+
+ARCHITECTURE dd OF SelNumber IS
+BEGIN
+	WITH a SELECT
+		qqq <= n1 WHEN "000",
+			   n2 WHEN "001",
+			   n3 WHEN "010",
+			   n4 WHEN "011",
+			   n5 WHEN "100",
+			   n6 WHEN "101",
+			   "0000" WHEN others;
+END dd;
